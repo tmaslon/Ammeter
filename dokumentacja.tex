@@ -41,6 +41,8 @@
 \newpage
 
 \tableofcontents
+\listoffigures
+\listoftables
 
 \newpage
 
@@ -58,7 +60,7 @@ Układ należało zasilić symetrycznym napięciem $\pm$\textbf{12V}, ponieważ 
 \subsection{Przetwarzanie wartości mierzonej}
 Sygnał mierzony musi być podawany na rezystor pomiarowy $\mathbf{0.1\Omega}$, aby uzyskać znany spadek napięcia, na którym mogą pracować kolejne elementy układu. Konieczna jest odpowiednia polaryzacja. Napięcie z rezystora podawane jest na kolejne wzmacniacze operacyjne, które działają w konfiguracji wzmacniacza nieodwracającego (przeskalowywanie sygnału) lub sumującego albo odejmującego (przesuwanie sygnału o stałą wartość). 
 \subsection{Dokładność}
-W całym urządzeniu stosowano rezystory z szeregu E24, które charakteryzują się tolerancją rzędu $\pm$5\%. Ich wartości bezpośrednio wpływają na parametr wzmocnienia każdego wzmacniacza oraz mnożniki dzielników napięciowych, w związku z czym w układzie mogą pojawiać się zauważalne różnice pomiędzy wartościami rzeczywistymi a przetworzonymi. W celu redukcji tych błędów, w koniecznych miejscach zastosowano potencjometry, które pozwalają na doregulowanie wartości napięcia. Przy takim rozwiązaniu powinno być możliwe uzyskanie dokładności pomiarów na poziomie 2\%. \\
+W całym urządzeniu stosowano rezystory z szeregu E24, które charakteryzują się tolerancją rzędu $\pm$5\%. Ich wartości bezpośrednio wpływają na parametr wzmocnienia każdego wzmacniacza oraz mnożniki dzielników napięciowych, w związku z czym w układzie mogą pojawiać się zauważalne różnice pomiędzy wartościami rzeczywistymi a przetworzonymi. W celu redukcji tych błędów, w koniecznych miejscach zastosowano precyzyjne potencjometry, które pozwalają na doregulowanie wartości napięcia. Przy takim rozwiązaniu powinno być możliwe uzyskanie dokładności pomiarów na poziomie 2\%. \\
 
 \section{Koncepcja działania}\label{sec:koncepcja}
 \subsection{Sygnał napięciowy 0\,\dots\,10V}\label{subsec:0-10V}
@@ -70,28 +72,57 @@ Sygnał uzyskany za pierwszym wzmacniaczem operacyjnym układu (omówionym w pun
 \begin{equation*}
 V_{disp} = 1000 \cdot \frac{V_{in}}{V_{ref}},
 \end{equation*}
-czyli wartości z zakresu \textbf{010 - 200}. \\
+czyli wartości z zakresu \textbf{010 - 200}.
+Koncepcję działania układu przedstawia także schemat blokowy, Załącznik do dokumentacji.
 
 \section{Realizacja zasilania i jego zabezpieczenia}
 \subsection{Główne zasilanie układu}
 Cały układ zasilany jest stałym napięciem symetrycznym $\pm$12V. Układ połączenia zasilaczy (\textit{rys}) generuje potencjał odniesienia oraz dwie linie o potencjałach +12V i -12V względem masy. Na układ wyprowadzone są więc trzy osobne linie. Szeregowo z napięciem dodatnim połączona jest dioda Schottky'ego \textbf{BAT42}, która zabezpiecza układ przed odwrotnym podłączeniem zasilania. Działa ona analogicznie do zwykłej diody prostowniczej, jednak spadek napięcia na samym elemencie jest dużo niższy (około 0.3V).
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.5]{power_supply.png}
+\label{main_power_supply}
+\caption{Ideowy schemat realizacji głównego zasilania układu}
+\end{figure}
+
 \subsection{Zasilanie przetwornika ICL7107}
 Sterownik do obsługi wyświetlaczy wymaga zasilania symetrycznego o napięciu 5V. Uzyskuje się je z zasilania głównego z wykorzystaniem diód Zenera o napięciu przebicia równym 5.1V (\textit{rys}). Uzyskiwany w ten sposób spadek napięcia jest stabilny i niezależny od zmian wartości zasilania głównego. Fakt ten wykorzystuje się, używając napięcie zasilające ICL7107 także do uzyskiwania wartości 0.5V i 1V, które potrzebne są przy przesuwaniu zakresów napięcia na wzmacniaczach operacyjnych. Sygnał zasilający jest dodatkowo odfiltrowywany przez kondensatory elektrolityczne 10$\mu$F.
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.5]{icl_power_supply.png}
+\label{icl_power_supply}
+\caption{Ideowy schemat realizacji zasilania układu ICL7107}
+\end{figure}
+
 \subsection{Zasilanie diód wyświelaczy}
 Przyjęto pobór prądu dla każdej czerwonej diody na poziomie 3-4mA. Realizację układu zasilającego przeprowadzono analogicznie jak przy sterowniku (\textit{rys}). Osobne zasilanie zapewnia stabilność zasilania ICL7107 oraz wyjść wtórników napięciowych utrzymujących napięcia 0.5V i 1V, ponieważ pobór prądu przy dużej ilości zapalonych segmentów może być znaczny i mógłby wpływać na inne elementy układu, gdyby zostało wykonane wspólne zasilanie.
 
 \section{Zastosowane elementy i układy elektroniczne}
 \subsection{Układy scalone}
 \begin{itemize}
-	\item wzmacniacz operacyjny \textbf{TL081CP} (\textit{x8})
-	\item przetwornik analogowo-cyfrowy \textbf{ICL7107}
+	\item wzmacniacz operacyjny \textbf{TL081CP} (\textit{x8}) - przetwarzanie zakresów napięcia, wtórniki napięciowe
+	\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.2]{tl081_pinout.png}
+	\label{tl081_pinout}
+	\caption{Konfiguracja pinów wzmacniacza operacyjnego TL081}
+	\end{figure}
+	\item przetwornik analogowo-cyfrowy \textbf{ICL7107} - przetwarzanie analogowego sygnału napięciowego na 		cyfrowe sterowanie trzema wyświetlaczami siedmiosegmentowymi
+	\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.3]{icl7107_pinout.png}
+	\label{tl081_pinout}
+	\caption{Konfiguracja pinów przetwornika A/C ICL7107}
+	\end{figure}
 \end{itemize}
 \subsection{Elementy półprzewodnikowe}
 \begin{itemize}
 	\item tranzystor bipolarny typu NPN \textbf{BD139}
-	\item dioda Schottky'ego \textbf{BAT42} 
-	\item dioda Zenera 5V1 (\textit{x2})
+	\item dioda Schottky'ego \textbf{BAT42} - zabezpieczenie głównego zasilania przed odwrotną polaryzacją
+	\item dioda Zenera 5V1 (\textit{x2}) - stabilizator napięcia zasilającego przetwornik ICL7107
+	\item dioda Zenera 5V6 - stabilizator napięcia zasilającego wyświetlacze
 \end{itemize}
+Wymieniono tylko układy i elementy o większym znaczeniu i bardziej skomplikowanym działaniu. Wykaz wszystkich użytych w projekcie elementów, wraz z podstawowymi parametrami, znajduje się w Załączniku dołączonym do dokumentacji.
 
 
 
