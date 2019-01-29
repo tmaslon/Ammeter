@@ -8,6 +8,7 @@
 \usepackage[margin=2.5cm]{geometry}
 \usepackage{anyfontsize}
 \usepackage{caption}
+\usepackage{rotating}
 \graphicspath{ {img/} }
 
 \begin{document}
@@ -258,32 +259,23 @@ R_{gran(2.00A)} = 345\Omega
 \end{itemize}
 Wymieniono tylko układy i elementy o większym znaczeniu i bardziej skomplikowanym działaniu. Wykaz wszystkich użytych w projekcie elementów, wraz z podstawowymi parametrami, znajduje się w Załączniku dołączonym do dokumentacji.
 
-\newpage
 
-\begin{center}
-\LARGE \textbf{ZAŁĄCZNIK 1} \\
-\large Koncepcyjny schemat blokowy urządzenia \\
-\end{center}
-
-\begin{figure}[h!]
+\begin{sidewaysfigure}[H]
 	\centering
-	\includegraphics[scale=0.75, angle=-90, origin=c]{diagram_blokowy.png}
-\end{figure}
+	\LARGE \textbf{ZAŁĄCZNIK 1} \\
+	\large Koncepcyjny schemat blokowy urządzenia \\
+	\includegraphics[scale=0.90, origin=c]{diagram_blokowy.png}
+\end{sidewaysfigure}
 	
-\newpage
 
-\begin{center}
-\LARGE \textbf{ZAŁĄCZNIK 2} \\
-\large Schemat symulacyjny układu \\
-\end{center}
-
-\begin{figure}[h!]
+\begin{sidewaysfigure}[H]
 	\centering
-	\includegraphics[scale=0.65, angle=-90, origin=c]{ammeter.png}
-\end{figure}
+	\LARGE \textbf{ZAŁĄCZNIK 2} \\
+	\large Schemat symulacyjny układu 
+	\includegraphics[scale=0.82, origin=c]{ammeter.png}
+\end{sidewaysfigure}
 
 \newpage
-
 \begin{center}
 \LARGE \textbf{ZAŁĄCZNIK 3} \\
 \large Wykaz elementów i układów wykorzystanych w projekcie \\
@@ -471,7 +463,7 @@ SJ1 & - & zwora \\
 \hline
 T1 & BD139 & tranzystor typu NPN \\
 \hline
-?? & ?? & ?? \\
+ &  &  \\
 \hline
 \end{tabular}
 \end{minipage}
