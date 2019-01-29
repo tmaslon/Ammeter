@@ -1,0 +1,86 @@
+Partlist exported from E:/GIT/Ammeter/Ammeter.sch at 2019-01-29 16:26
+
+Part Value     Device                Package      Description                AVAILABILITY DESCRIPTION MF       MP      PACKAGE         PRICE SPICEMODEL SPICEPREFIX
+C1   10uF      C-EU025-024X044       C025-024X044 CAPACITOR, European symbol                                                                                       
+C2   10uF      C-EU025-024X044       C025-024X044 CAPACITOR, European symbol                                                                                       
+C3   100pF     C-EU025-024X044       C025-024X044 CAPACITOR, European symbol                                                                                       
+C4   0.1uF     C-EU025-024X044       C025-024X044 CAPACITOR, European symbol                                                                                       
+C5   0.047uF   C-EU025-024X044       C025-024X044 CAPACITOR, European symbol                                                                                       
+C6   0.22uF    C-EU025-024X044       C025-024X044 CAPACITOR, European symbol                                                                                       
+C7   0.01uF    C-EU025-024X044       C025-024X044 CAPACITOR, European symbol                                                                                       
+C8   10uF      C-EU025-024X044       C025-024X044 CAPACITOR, European symbol                                                                                       
+D1   BZX85C5V1 BZX85                 DO41Z10      Z DIODE                                                                                                          
+D2   BZX85C5V1 BZX85                 DO41Z10      Z DIODE                                                                                                          
+D3   BAT42     BAT42                 DO35-10      DIODE                                                                                                            
+D4   BZX85C5V6 BZX85                 DO41Z10      Z DIODE                                                                                                          
+DIS1           7SEG-CA               7SEG-13      7-segment DISPLAY                                                                                                
+DIS2           7SEG-CA               7SEG-13      7-segment DISPLAY                                                                                                
+DIS3           7SEG-CA               7SEG-13      7-segment DISPLAY                                                                                                
+G1   12V       CH291-1220LF          CH291-1220LF Battery Holder, SMT, 12mm                                                                                        
+G2   12V       CH291-1220LF          CH291-1220LF Battery Holder, SMT, 12mm                                                                                        
+IC1  TL081P    TL081P                DIL08        OP AMP                                                                                                           
+IC2  TL081P    TL081P                DIL08        OP AMP                                                                                                           
+IC3  ICL7107   ICL7107               DIL40        ICM007                     Unavailable              Intersil ICL7107 DIP-40 Intersil None                        
+IC4  TL081P    TL081P                DIL08        OP AMP                                                                                                           
+IC5  TL081P    TL081P                DIL08        OP AMP                                                                                                           
+IC6  TL081P    TL081P                DIL08        OP AMP                                                                                                           
+IC7  TL081P    TL081P                DIL08        OP AMP                                                                                                           
+IC8  TL081P    TL081P                DIL08        OP AMP                                                                                                           
+IC9  TL081P    TL081P                DIL08        OP AMP                                                                                                           
+R1   270       R-EU_0204/7           0204/7       RESISTOR, European symbol                                                                                        
+R2   270       R-EU_0204/7           0204/7       RESISTOR, European symbol                                                                                        
+R3   100       R-EU_0204/7           0204/7       RESISTOR, European symbol                                                                                        
+R4   50k       POTENTIOMETER_PT_SPIN PT-SPIN      Potentiometer                                                                              POT        X          
+R5   4k7       R-EU_0204/7           0204/7       RESISTOR, European symbol                                                                                        
+R6   270       R-EU_0204/7           0204/7       RESISTOR, European symbol                                                                                        
+R7   270       R-EU_0204/7           0204/7       RESISTOR, European symbol                                                                                        
+R8   270       R-EU_0204/7           0204/7       RESISTOR, European symbol                                                                                        
+R9   1M        R-EU_0204/7           0204/7       RESISTOR, European symbol                                                                                        
+R10  270       R-EU_0204/7           0204/7       RESISTOR, European symbol                                                                                        
+R11  100       R-EU_0204/7           0204/7       RESISTOR, European symbol                                                                                        
+R12  270       R-EU_0204/7           0204/7       RESISTOR, European symbol                                                                                        
+R13  270       R-EU_0204/7           0204/7       RESISTOR, European symbol                                                                                        
+R14  270       R-EU_0204/7           0204/7       RESISTOR, European symbol                                                                                        
+R15  270       R-EU_0204/7           0204/7       RESISTOR, European symbol                                                                                        
+R16  270       R-EU_0204/7           0204/7       RESISTOR, European symbol                                                                                        
+R17  100k      POTENTIOMETER_PT_SPIN PT-SPIN      Potentiometer                                                                              POT        X          
+R18  20k       R-EU_0204/7           0204/7       RESISTOR, European symbol                                                                                        
+R19  100k      R-EU_0204/7           0204/7       RESISTOR, European symbol                                                                                        
+R20  470k      R-EU_0204/7           0204/7       RESISTOR, European symbol                                                                                        
+R21  270       R-EU_0204/7           0204/7       RESISTOR, European symbol                                                                                        
+R22  270       R-EU_0204/7           0204/7       RESISTOR, European symbol                                                                                        
+R23  1M        R-EU_0204/7           0204/7       RESISTOR, European symbol                                                                                        
+R24  270       R-EU_0204/7           0204/7       RESISTOR, European symbol                                                                                        
+R25  270       R-EU_0204/7           0204/7       RESISTOR, European symbol                                                                                        
+R26  270       R-EU_0204/7           0204/7       RESISTOR, European symbol                                                                                        
+R27  270       R-EU_0204/7           0204/7       RESISTOR, European symbol                                                                                        
+R28  270       R-EU_0204/7           0204/7       RESISTOR, European symbol                                                                                        
+R29  270       R-EU_0204/7           0204/7       RESISTOR, European symbol                                                                                        
+R30  270       R-EU_0204/7           0204/7       RESISTOR, European symbol                                                                                        
+R31  110       R-EU_0204/7           0204/7       RESISTOR, European symbol                                                                                        
+R32  270       R-EU_0204/7           0204/7       RESISTOR, European symbol                                                                                        
+R33  270       R-EU_0204/7           0204/7       RESISTOR, European symbol                                                                                        
+R34  15k       R-EU_0204/7           0204/7       RESISTOR, European symbol                                                                                        
+R35  10k       R-EU_0204/7           0204/7       RESISTOR, European symbol                                                                                        
+R36  1M        R-EU_0204/7           0204/7       RESISTOR, European symbol                                                                                        
+R37  0.1       R-EU_0204/7           0204/7       RESISTOR, European symbol                                                                                        
+R38  300       R-EU_0204/7           0204/7       RESISTOR, European symbol                                                                                        
+R39  300       R-EU_0204/7           0204/7       RESISTOR, European symbol                                                                                        
+R40  560       R-EU_0204/7           0204/7       RESISTOR, European symbol                                                                                        
+R41  560       R-EU_0204/7           0204/7       RESISTOR, European symbol                                                                                        
+R42  560       R-EU_0204/7           0204/7       RESISTOR, European symbol                                                                                        
+R43  15k       R-EU_0204/7           0204/7       RESISTOR, European symbol                                                                                        
+R44  15k       R-EU_0204/7           0204/7       RESISTOR, European symbol                                                                                        
+R45  560       R-EU_0204/7           0204/7       RESISTOR, European symbol                                                                                        
+R46  15K       R-EU_0204/7           0204/7       RESISTOR, European symbol                                                                                        
+R47  15K       R-EU_0204/7           0204/7       RESISTOR, European symbol                                                                                        
+R48  15k       R-EU_0204/7           0204/7       RESISTOR, European symbol                                                                                        
+R49  15k       R-EU_0204/7           0204/7       RESISTOR, European symbol                                                                                        
+R50  5k        POTENTIOMETER_PT_SPIN PT-SPIN      Potentiometer                                                                              POT        X          
+R51  16k       R-EU_0204/7           0204/7       RESISTOR, European symbol                                                                                        
+R52  20k       POTENTIOMETER_PT_SPIN PT-SPIN      Potentiometer                                                                              POT        X          
+R53  300       R-EU_0204/7           0204/7       RESISTOR, European symbol                                                                                        
+R54  2k        POTENTIOMETER_PT_SPIN PT-SPIN      Potentiometer                                                                              POT        X          
+R55  500       POTENTIOMETER_PT_SPIN PT-SPIN      Potentiometer                                                                              POT        X          
+SJ1            SJ                    SJ           SMD solder JUMPER                                                                                                
+T1   BD139     BD139                 TO126        NPN TRANSISTOR                                                                                        J          
