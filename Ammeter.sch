@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -11121,6 +11121,16 @@ single anode, 13 mm</description>
 <label x="139.7" y="88.9" size="1.4224" layer="95" rot="R180" xref="yes"/>
 <pinref part="R34" gate="G$1" pin="2"/>
 </segment>
+<segment>
+<pinref part="IC8" gate="A" pin="OUT"/>
+<wire x1="287.02" y1="157.48" x2="279.4" y2="157.48" width="0.1524" layer="91"/>
+<label x="287.02" y="157.48" size="1.4224" layer="95" xref="yes"/>
+<pinref part="R52" gate="1" pin="2"/>
+<wire x1="279.4" y1="157.48" x2="274.32" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="271.78" y1="139.7" x2="279.4" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="279.4" y1="139.7" x2="279.4" y2="157.48" width="0.1524" layer="91"/>
+<junction x="279.4" y="157.48"/>
+</segment>
 </net>
 <net name="N$17" class="0">
 <segment>
@@ -11682,18 +11692,6 @@ single anode, 13 mm</description>
 <pinref part="R46" gate="G$1" pin="2"/>
 <pinref part="R50" gate="1" pin="2"/>
 <wire x1="248.92" y1="241.3" x2="251.46" y2="241.3" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$52" class="0">
-<segment>
-<pinref part="IC8" gate="A" pin="OUT"/>
-<wire x1="287.02" y1="157.48" x2="279.4" y2="157.48" width="0.1524" layer="91"/>
-<label x="287.02" y="157.48" size="1.4224" layer="95" xref="yes"/>
-<pinref part="R52" gate="1" pin="2"/>
-<wire x1="279.4" y1="157.48" x2="274.32" y2="157.48" width="0.1524" layer="91"/>
-<wire x1="271.78" y1="139.7" x2="279.4" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="279.4" y1="139.7" x2="279.4" y2="157.48" width="0.1524" layer="91"/>
-<junction x="279.4" y="157.48"/>
 </segment>
 </net>
 </nets>
