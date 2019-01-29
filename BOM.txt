@@ -1,4 +1,4 @@
-Partlist exported from E:/GIT/Ammeter/Ammeter.sch at 2019-01-29 16:26
+Partlist exported from E:/GIT/Ammeter/Ammeter.sch at 2019-01-29 23:12
 
 Part Value     Device                Package      Description                AVAILABILITY DESCRIPTION MF       MP      PACKAGE         PRICE SPICEMODEL SPICEPREFIX
 C1   10uF      C-EU025-024X044       C025-024X044 CAPACITOR, European symbol                                                                                       
@@ -29,7 +29,7 @@ IC8  TL081P    TL081P                DIL08        OP AMP
 IC9  TL081P    TL081P                DIL08        OP AMP                                                                                                           
 R1   270       R-EU_0204/7           0204/7       RESISTOR, European symbol                                                                                        
 R2   270       R-EU_0204/7           0204/7       RESISTOR, European symbol                                                                                        
-R3   100       R-EU_0204/7           0204/7       RESISTOR, European symbol                                                                                        
+R3   130       R-EU_0204/7           0204/7       RESISTOR, European symbol                                                                                        
 R4   50k       POTENTIOMETER_PT_SPIN PT-SPIN      Potentiometer                                                                              POT        X          
 R5   4k7       R-EU_0204/7           0204/7       RESISTOR, European symbol                                                                                        
 R6   270       R-EU_0204/7           0204/7       RESISTOR, European symbol                                                                                        
@@ -37,7 +37,7 @@ R7   270       R-EU_0204/7           0204/7       RESISTOR, European symbol
 R8   270       R-EU_0204/7           0204/7       RESISTOR, European symbol                                                                                        
 R9   1M        R-EU_0204/7           0204/7       RESISTOR, European symbol                                                                                        
 R10  270       R-EU_0204/7           0204/7       RESISTOR, European symbol                                                                                        
-R11  100       R-EU_0204/7           0204/7       RESISTOR, European symbol                                                                                        
+R11  130       R-EU_0204/7           0204/7       RESISTOR, European symbol                                                                                        
 R12  270       R-EU_0204/7           0204/7       RESISTOR, European symbol                                                                                        
 R13  270       R-EU_0204/7           0204/7       RESISTOR, European symbol                                                                                        
 R14  270       R-EU_0204/7           0204/7       RESISTOR, European symbol                                                                                        
